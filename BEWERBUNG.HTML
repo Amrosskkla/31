@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beispiel Download-Seite</title>
+    <style>
+        body {
+            font-family: "Arial", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #202122;
+        }
+
+        header {
+            background-color: #0078d4;
+            color: white;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        nav {
+            background-color: #f1f1f1;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0078d4;
+            margin-right: 15px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            display: flex;
+            margin-top: 20px;
+        }
+
+        .sidebar {
+            width: 200px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-right: 1px solid #ccc;
+        }
+
+        .sidebar h2 {
+            font-size: 18px;
+            color: #555;
+        }
+
+        .main-content {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: white;
+        }
+
+        .main-content h2 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .footer {
+            background-color: #f1f1f1;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+        }
+
+        .download-links {
+            margin-top: 20px;
+        }
+
+        .download-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .download-links li {
+            margin-bottom: 10px;
+        }
+
+        .download-links a {
+            text-decoration: none;
+            color: #0078d4;
+            font-size: 16px;
+        }
+
+        .download-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Beispiel Download-Seite</h1>
+</header>
+
+<nav>
+    <a href="#">Hauptseite</a>
+    <a href="#">Artikel</a>
+    <a href="#">Über uns</a>
+    <a href="#">Kontakt</a>
+</nav>
+
+<div class="container">
+    <div class="sidebar">
+        <h2>Seitenbereiche</h2>
+        <ul>
+            <li><a href="#">Inhalt</a></li>
+            <li><a href="#">Dokumente</a></li>
+            <li><a href="#">Hilfeseiten</a></li>
+            <li><a href="#">Kategorien</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h2>Dokumente zum Herunterladen</h2>
+        <p>Hier kannst du wichtige Dokumente herunterladen, wie zum Beispiel Lebensläufe oder Motivationsschreiben. Klicke auf die Links unten, um die PDFs herunterzuladen.</p>
+        
+        <div class="download-links">
+            <h3>Verfügbare Downloads</h3>
+            <ul>
+                <li><a href="Lebenslauf.pdf" download>Lebenslauf herunterladen</a></li>
+                <li><a href="Motivationsschreiben.pdf" download>Motivationsschreiben herunterladen</a></li>
+                <li><a href="Beispiel.pdf" download>Beispiel-Dokument herunterladen</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p>&copy; 2025 Beispiel Webseite. Alle Rechte vorbehalten.</p>
+</div>
+
+</body>
+</html>
